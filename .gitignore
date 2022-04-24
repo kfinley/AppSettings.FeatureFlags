@@ -1,0 +1,13 @@
+.DS_Store
+.vs
+*.user
+[Bb]in/
+[Oo]bj/
+
+/vsdbg
+/links
+
+Icon
+
+Icon[
+]

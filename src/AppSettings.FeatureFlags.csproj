@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Simple Feature Flags implemention using appsettings.json files</Description>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Title>AppSettings.FeatureFlags</Title>
+    <PackageId>AppSettings.FeatureFlags</PackageId>
+    <Copyright>© 2022</Copyright>
+    <PackageTags>"appsettings", "Feature-Flags", "FeatureFlags"</PackageTags>
+    <Version>0.1.0</Version>
+    <Authors>Kyle Finley</Authors>
+    <PackageProjectUrl>https://github.com/kfinley/AppSettings.FeatureFlags</PackageProjectUrl>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/kfinley/AppSettings.FeatureFlags</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
