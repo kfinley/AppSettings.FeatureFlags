@@ -21,8 +21,17 @@ jobs:
       run: dotnet build --no-restore
     # - name: Test
     #   run: dotnet test --no-build --verbosity normal
-    - name: Publish nuget on version change
-      uses: rohith/publish-nuget@v2
+    - name: publish on version change
+      id: publish_nuget
+      uses: tedd/publish-nuget-neo@v1
       with:
-        PROJECT_FILE_PATH: src/AppSettings.FeatureFlags.csproj
+        # NuGet API key to authenticate on NuGet server.
+        # DO NOT PUT KEY DIRECTLY IN HERE.
+        # Use Secrets function in GitHub for example, i.e. dollarsign{{secrets.YOUR_NUGET_API_KEY}}.
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        PROJECT_FILE_PATH: src/AppSettings.FeatureFlags.csproj
+    # - name: Publish nuget on version change
+    #   uses: rohith/publish-nuget@v2
+    #   with:
+    #     PROJECT_FILE_PATH: src/AppSettings.FeatureFlags.csproj
+    #     NUGET_KEY: ${{secrets.NUGET_API_KEY}}
