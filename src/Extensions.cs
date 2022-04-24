@@ -20,5 +20,8 @@ namespace AppSettings.FeatureFlags {
 
       return services;
     }
+
+    public static bool IsEnabled(this IDictionary<string, bool> target, string flag) =>
+      target.ContainsKey(flag) && target[flag];
   }
 }
