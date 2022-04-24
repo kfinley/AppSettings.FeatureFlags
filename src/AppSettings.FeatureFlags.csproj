@@ -7,7 +7,7 @@
     <PackageId>AppSettings.FeatureFlags</PackageId>
     <Copyright>© 2022</Copyright>
     <PackageTags>"appsettings", "Feature-Flags", "FeatureFlags"</PackageTags>
-    <Version>0.1.0</Version>
+    <Version>0.0.1</Version>
     <Authors>Kyle Finley</Authors>
     <PackageProjectUrl>https://github.com/kfinley/AppSettings.FeatureFlags</PackageProjectUrl>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
